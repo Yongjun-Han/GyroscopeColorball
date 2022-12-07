@@ -9,14 +9,36 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Circle()
-            .fill(Color.teal)
-            .frame(width: 100, height: 100)
+        TabView {
+            NavigationView{
+                motionView(motion: MotionManager())
+            }
+            .tabItem{
+                Label("Gyro",systemImage: "circle.hexagonpath.fill")
+
+            }
+            NavigationView{
+                helloView()
+            }
+            .tabItem{
+                Label("Hello",systemImage: "house.fill")
+                
+            }
+            NavigationView{
+                byeView()
+            }
+            .tabItem{
+                Label("Bye",systemImage: "circle.hexagonpath.fill")
+                
+            }
+        }
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+       
     }
 }

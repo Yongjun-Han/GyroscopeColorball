@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1538974D29403B6E0027D202 /* manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1538974B29403A730027D202 /* manager.swift */; };
+		1538974F29403D7D0027D202 /* helloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1538974E29403D7D0027D202 /* helloView.swift */; };
+		1538975129403D910027D202 /* byeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1538975029403D910027D202 /* byeView.swift */; };
+		15389753294040790027D202 /* motionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15389752294040790027D202 /* motionView.swift */; };
 		1561C8A3293F3937007D7908 /* GyroscopeColorballApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561C8A2293F3937007D7908 /* GyroscopeColorballApp.swift */; };
 		1561C8A5293F3937007D7908 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1561C8A4293F3937007D7908 /* ContentView.swift */; };
 		1561C8A7293F3938007D7908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1561C8A6293F3938007D7908 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1538974B29403A730027D202 /* manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = manager.swift; sourceTree = "<group>"; };
+		1538974E29403D7D0027D202 /* helloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helloView.swift; sourceTree = "<group>"; };
+		1538975029403D910027D202 /* byeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = byeView.swift; sourceTree = "<group>"; };
+		15389752294040790027D202 /* motionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motionView.swift; sourceTree = "<group>"; };
 		1561C89F293F3937007D7908 /* GyroscopeColorball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GyroscopeColorball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1561C8A2293F3937007D7908 /* GyroscopeColorballApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeColorballApp.swift; sourceTree = "<group>"; };
 		1561C8A4293F3937007D7908 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15389748294035A00027D202 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1538974B29403A730027D202 /* manager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15389749294035A50027D202 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1538974E29403D7D0027D202 /* helloView.swift */,
+				1538975029403D910027D202 /* byeView.swift */,
+				15389752294040790027D202 /* motionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1538974A294035C40027D202 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1561C896293F3937007D7908 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +84,9 @@
 		1561C8A1293F3937007D7908 /* GyroscopeColorball */ = {
 			isa = PBXGroup;
 			children = (
+				15389749294035A50027D202 /* View */,
+				1538974A294035C40027D202 /* ViewModel */,
+				15389748294035A00027D202 /* Model */,
 				1561C8A2293F3937007D7908 /* GyroscopeColorballApp.swift */,
 				1561C8A4293F3937007D7908 /* ContentView.swift */,
 				1561C8A6293F3938007D7908 /* Assets.xcassets */,
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1561C8A5293F3937007D7908 /* ContentView.swift in Sources */,
+				1538974F29403D7D0027D202 /* helloView.swift in Sources */,
+				15389753294040790027D202 /* motionView.swift in Sources */,
 				1561C8A3293F3937007D7908 /* GyroscopeColorballApp.swift in Sources */,
+				1538974D29403B6E0027D202 /* manager.swift in Sources */,
+				1538975129403D910027D202 /* byeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
